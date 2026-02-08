@@ -7,7 +7,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="theme-color" content="#C1272D">
     <link rel="manifest" href="./manifest.json">
-    <title>Ma vie 💙 My love</title>
+    <title>Ma vie VS My love</title>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -507,7 +507,7 @@
     
     <!-- Side Menu -->
     <nav class="side-menu" id="sideMenu">
-        <div class="menu-title">Ma vie 💙 My love</div>
+        <div class="menu-title">Ma vie VS My love</div>
         <ul class="menu-links">
             <li><a href="#nous" onclick="closeMenu()"> Nous </a></li>
             <li><a href="#dialogue" onclick="closeMenu()">💬 Dialogue</a></li>
@@ -799,24 +799,19 @@
         
         <div class="card" style="margin-top: 30px;">
             <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.8em; color: var(--berber-red); margin-bottom: 20px;">Notre Playlist</h3>
+            <!-- Goldman YouTube - Remplace ID_VIDEO1 par ton ID (ex: dQw4w9WgXcQ) -->
+<div style="margin-top: 25px; padding: 20px; background: linear-gradient(135deg, var(--berber-red), var(--terracotta)); border-radius: 15px;">
+  <h4 style="color: white; text-align: center; font-family: 'Cormorant Garamond', serif;">Je ne vous parlerai pas d'elle - Goldman</h4>
+  <iframe width="100%" height="315" src="https://www.youtube.com/watch?v=_9LctOf2ixc" title="Goldman" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen loading="lazy" style="border-radius: 12px;"></iframe>
+</div>
+
+<!-- JUL YouTube - Remplace ID_VIDEO2 -->
+<div style="margin-top: 25px; padding: 20px; background: linear-gradient(135deg, var(--oasis-green), var(--sahara-blue)); border-radius: 15px;">
+  <h4 style="color: white; text-align: center; font-family: 'Cormorant Garamond', serif;">Un jour je l'aurai - JUL</h4>
+  <iframe width="100%" height="315" src="https://www.youtube.com/embed/ID_VIDEO2" title="JUL" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen loading="lazy" style="border-radius: 12px;"></iframe>
+</div>
+
             
-            <div style="background: #f9f9f9; padding: 20px; border-radius: 10px; margin-bottom: 20px;">
-                <strong>🎵 "Je ne vous parlerai pas d'elle" - Jean-Jacques Goldman</strong><br>
-                <em style="opacity: 0.7;">La chanson qui nous rappelle notre histoire</em>
-            </div>
-            
-            <div style="background: #f9f9f9; padding: 20px; border-radius: 10px; margin-bottom: 20px;">
-                <strong>🎵 "Un jour je l'aurai" - JUL</strong><br>
-                <em style="opacity: 0.7;">La première fois en moto 🏍️</em>
-            </div>
-            
-            <div class="input-group">
-                <label>Ajouter une chanson</label>
-                <input type="text" id="newSong" placeholder="Titre - Artiste">
-            </div>
-            <button class="btn btn-primary" onclick="addSong()">Ajouter à la playlist</button>
-            
-            <div id="playlistList" style="margin-top: 20px;"></div>
         </div>
     </section>
     
