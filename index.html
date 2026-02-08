@@ -1145,34 +1145,6 @@
             `).join('');
         }
         
-        // PLAYLIST
-        function addSong() {
-            const song = document.getElementById('newSong').value.trim();
-            if (!song) return;
-            
-            const playlist = loadData('playlist') || [];
-            playlist.push({ song, id: Date.now() });
-            saveData('playlist', playlist);
-            
-            document.getElementById('newSong').value = '';
-            loadPlaylist();
-        }
-        
-        function loadPlaylist() {
-            const playlist = loadData('playlist') || [];
-            const list = document.getElementById('playlistList');
-            
-            if (playlist.length === 0) {
-                list.innerHTML = '';
-                return;
-            }
-            
-            list.innerHTML = playlist.map(s => `
-                <div style="background: #f9f9f9; padding: 15px; border-radius: 10px; margin-bottom: 10px;">
-                    🎵 ${s.song}
-                </div>
-            `).join('');
-        }
         
         // INIT
         window.addEventListener('load', () => {
